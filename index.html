@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Block Cipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <h2>Crypto Block Cipher</h2>
+
+    <label>Key:</label>
+    <input type="text" id="key" placeholder="Masukkan key">
+
+    <label>Text:</label>
+    <textarea id="text" placeholder="Masukkan text"></textarea>
+
+    <label>Mode:</label>
+    <select id="mode">
+        <option value="ECB">ECB</option>
+        <option value="CBC">CBC</option>
+        <option value="CFB">CFB</option>
+    </select>
+
+    <button onclick="encrypt()">Encrypt</button>
+    <button onclick="decrypt()">Decrypt</button>
+
+    <h3>Result:</h3>
+    <p id="result">-</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
